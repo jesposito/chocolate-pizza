@@ -1,0 +1,47 @@
+* {
+    box-sizing: border-box;
+  }
+  body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: row;
+    margin: 0;
+  }
+  .outer-col-1 {
+    background: #ffffff;
+    flex: 1;
+  }
+  .outer-col-2 {
+    display: flex;
+    flex-direction: column;
+    flex: 9;
+    min-width: 60vh;
+  }
+  .inner-row {
+    display: flex;
+    flex-direction: row;
+  }
+  .inner-col {
+    flex: 4;
+  }
+  .inner-row main {
+    min-height: 60vh;
+  }
+  .inner-row aside {
+    background: beige;
+    flex: 1;
+  }
+  header, footer {
+    background: #ffffff;
+    height: 15vh;
+    min-height: 6rem;
+    border: 1px solid;
+  }
+  header, footer, main, nav, aside {
+    padding: 1em;
+  }
+  #hrule {
+	  height: 6px;
+	  background: url(http://ibrahimjabbari.com/english/images/hr-11.png) repeat-x 0 0;
+    border: 0;
+  }
