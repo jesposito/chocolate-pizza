@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Droid+Serif%7CTeko%7CYellowtail');
+
 * {
     box-sizing: border-box;
   }
@@ -14,7 +16,7 @@
   .outer-col-2 {
     display: flex;
     flex-direction: column;
-    flex: 9;
+    flex: 4;
     min-width: 60vh;
   }
   .inner-row {
@@ -24,12 +26,40 @@
   .inner-col {
     flex: 4;
   }
+  #header-left {
+    float: left;
+  }
+  #header-left img {
+    float: left;
+    width: 2.7em;
+    height: 2.8em;
+    background: #555;
+  }
+  #left-padding{
+    padding-left: 1em;
+    float: left;
+  }
+  #header-left h1 {
+    font-size: 2em;
+    font-family: 'Yellowtail', cursive;
+    float:left;
+  }
+  #header-left h2 {
+    font-size: .8em;
+    font-family: 'Droid Serif', serif;
+    color: grey;
+  }
+  #header-right {
+    float:right;
+  }
   .inner-row main {
     min-height: 60vh;
+    border: 1px solid;
   }
   .inner-row aside {
     background: beige;
     flex: 1;
+
   }
   header, footer {
     background: #ffffff;
