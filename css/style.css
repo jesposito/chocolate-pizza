@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Droid+Serif%7CTeko%7CYellowtail');
+@import url('https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz%7CTeko%7CYellowtail%7CBenchNine%7CLato');
 
 * {
     box-sizing: border-box;
@@ -13,44 +13,71 @@
     background: #ffffff;
     flex: 1;
   }
+  .outer-col-1 {
+    background: #ffffff;
+    flex: .5;
+  }
   .outer-col-2 {
     display: flex;
     flex-direction: column;
-    flex: 4;
+    flex: 2.5;
     min-width: 60vh;
   }
   .inner-row {
     display: flex;
     flex-direction: row;
+    width:100%;
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: contain;
+    border: 1px solid black;
   }
   .inner-col {
-    flex: 4;
+    flex: 2;
   }
   #header-left {
     float: left;
   }
   #header-left img {
     float: left;
-    width: 2.7em;
-    height: 2.8em;
+    width: 2.6em;
+    height: 2.9em;
     background: #555;
   }
   #left-padding{
-    padding-left: 1em;
+    padding-left: .6em;
     float: left;
   }
+
   #header-left h1 {
-    font-size: 2em;
+    font-size: 2.3em;
     font-family: 'Yellowtail', cursive;
     float:left;
   }
   #header-left h2 {
-    font-size: .8em;
-    font-family: 'Droid Serif', serif;
-    color: grey;
+    clear: left;
+    font-size: .79em;
+    padding-left: .3em;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    color: #7a7a7a;
   }
   #header-right {
+    float: right;
+    display: inline-block;
+  }
+  #header-right ul {
     float:right;
+  }
+  #header-right li {
+    list-style-type: none;
+    display: block;
+    float:left;
+  }
+  #header-right img {
+    float:right;
+    height: 1.4em;
+    width: 1.4em;
+    margin: .08em;
   }
   .inner-row main {
     min-height: 60vh;
@@ -59,11 +86,10 @@
   .inner-row aside {
     background: beige;
     flex: 1;
-
   }
   header, footer {
     background: #ffffff;
-    height: 15vh;
+    height: 9vh;
     min-height: 6rem;
     border: 1px solid;
   }
@@ -71,7 +97,72 @@
     padding: 1em;
   }
   #hrule {
-	  height: 6px;
-	  background: url(http://ibrahimjabbari.com/english/images/hr-11.png) repeat-x 0 0;
-    border: 0;
+      float: left;
+      width: 100%;
+      height: .8em;
+      background: repeating-linear-gradient(45deg,
+       #FFFFFF 0,
+       #D3D3D3 .2px /* transition */, #D3D3D3 .1em,
+       #FFFFFF calc(.06em + 1px), #FFFFFF .28em
+     );
+  }
+  #sub-header {
+    padding-top: 2em;
+  }
+  #sub-header-left {
+    float: left;
+  }
+  #sub-header-left img {
+    float: left;
+    width: 2.6em;
+    height: 3em;
+    background: #555;
+  }
+  #sub-header-left h1 {
+    font-size: 3.5em;
+    font-family: 'BenchNine', sans-serif;
+    font-weight: 500;
+    float:left;
+    line-height: .75em;
+  }
+  #sub-header-left h2 {
+    clear: left;
+    font-size: .78em;
+    margin-left: .2em;
+    font-family: 'Lato', sans-serif;
+    color: #7e7e7e;
+    margin-top: -2em;
+  }
+  #sub-header-right {
+    float: right;
+    display: inline-block;
+  }
+  #sub-header-right img {
+    float: right;
+    display: inline-block;
+  }
+  #sub-header-right h2 {
+    float: right;
+    font-size: .78em;
+    margin-left: .4em;
+    margin-right: .4em;
+    font-family: 'Lato', sans-serif;
+    color: #7e7e7e;
+    display: inline-block;
+  }
+  #sub-right-padding {
+    padding-top: 4.65em;
+  }
+  #main-image {
+    width:100%;
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: contain;
+  }
+  #img-div {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
