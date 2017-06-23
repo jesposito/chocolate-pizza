@@ -1,7 +1,8 @@
-@import url('https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz%7CTeko%7CYellowtail%7CBenchNine%7CLato');
+@import url('https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz%7CTeko%7CYellowtail%7CBenchNine%7CLato%7CScope+One');
 
 * {
     box-sizing: border-box;
+    font-size: 16px;
   }
   body {
     display: flex;
@@ -30,7 +31,6 @@
     max-height: 100%;
     max-width: 100%;
     object-fit: contain;
-    border: 1px solid black;
   }
   .inner-col {
     flex: 2;
@@ -40,8 +40,8 @@
   }
   #header-left img {
     float: left;
-    width: 2.6em;
-    height: 2.9em;
+    width: 2.8em;
+    height: 3.1em;
     background: #555;
   }
   #left-padding{
@@ -50,13 +50,13 @@
   }
 
   #header-left h1 {
-    font-size: 2.3em;
+    font-size: 2.4em;
     font-family: 'Yellowtail', cursive;
     float:left;
   }
   #header-left h2 {
     clear: left;
-    font-size: .79em;
+    font-size: .9em;
     padding-left: .3em;
     font-family: 'Yanone Kaffeesatz', sans-serif;
     color: #7a7a7a;
@@ -72,26 +72,34 @@
     list-style-type: none;
     display: block;
     float:left;
+    padding-top: .7em;
   }
   #header-right img {
     float:right;
-    height: 1.4em;
-    width: 1.4em;
+    height: 1.5em;
+    width: 1.5em;
     margin: .08em;
   }
   .inner-row main {
     min-height: 60vh;
-    border: 1px solid;
   }
   .inner-row aside {
     background: beige;
     flex: 1;
   }
+  .inner-row p {
+    font-family: 'Scope One', serif;
+    color: #545454;
+    text-align: left;
+    text-indent: 2em;
+    line-height: 1.3em;
+    padding-top: 1.6em;
+    font-size: 1.25em;
+  }
   header, footer {
     background: #ffffff;
     height: 9vh;
     min-height: 6rem;
-    border: 1px solid;
   }
   header, footer, main, nav, aside {
     padding: 1em;
@@ -127,11 +135,11 @@
   }
   #sub-header-left h2 {
     clear: left;
-    font-size: .78em;
+    font-size: .79em;
     margin-left: .2em;
     font-family: 'Lato', sans-serif;
     color: #7e7e7e;
-    margin-top: -2em;
+    margin-top: -1.8em;
   }
   #sub-header-right {
     float: right;
@@ -143,7 +151,7 @@
   }
   #sub-header-right h2 {
     float: right;
-    font-size: .78em;
+    font-size: .79em;
     margin-left: .4em;
     margin-right: .4em;
     font-family: 'Lato', sans-serif;
@@ -169,3 +177,78 @@
   #img-div img{
   padding-top: 1em;
   }
+
+
+  #paper-continer {
+    width:100%;
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: contain;
+
+  }
+  #paper-image{
+    height: 100%;
+    min-height: 18.5em;
+    max-height:18.5em;
+    width: 100%;
+    display: flex;
+    margin-top: 2em;
+    background-image: url('../img/list-bg.png');
+    flex-flow: column wrap;
+    padding-top: 2em;
+    padding-bottom: 2em;
+  }
+
+#checkboxes {
+  margin-top: .4em;
+  margin-bottom: .4em;
+  margin-left: 4.5em;
+  position: relative;
+}
+
+#checkboxes label {
+  cursor: pointer;
+	position: absolute;
+	width: 1em;
+	height: 1em;
+	top: 0;
+  left: 0;
+	background: #eee;
+	border: .08em solid #A68064;
+  border-radius: .15em;
+}
+
+#label-text {
+  position:absolute;
+  left: 3;
+}
+
+#checkboxes label:after {
+	opacity: 0.2;
+	content: '';
+	position: absolute;
+	width: .5em;
+	height: .1em;
+	background: transparent;
+	top: .25em;
+	left: .1em;
+	border: .2em solid #6B4226;
+	border-top: none;
+	border-right: none;
+
+	transform: rotate(-45deg);
+}
+
+#checkboxes label:hover::after {
+	opacity: 0.5;
+}
+
+#checkboxes input[type=checkbox]:checked + label:after {
+	opacity: 1;
+}
+
+#checkboxes span {
+  font-family: 'BenchNine', sans-serif;
+  font-size: 1.4em;
+  flex-wrap: wrap;
+}
