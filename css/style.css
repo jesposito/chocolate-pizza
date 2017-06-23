@@ -22,7 +22,6 @@
     display: flex;
     flex-direction: column;
     flex: 2.5;
-    min-width: 60vh;
   }
   .inner-row {
     display: flex;
@@ -184,8 +183,12 @@
     max-height: 100%;
     max-width: 100%;
     object-fit: contain;
-
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 150em;
   }
+
   #paper-image{
     height: 100%;
     min-height: 18.5em;
@@ -194,9 +197,13 @@
     display: flex;
     margin-top: 2em;
     background-image: url('../img/list-bg.png');
+    background-repeat: no-repeat;
     flex-flow: column wrap;
     padding-top: 2em;
     padding-bottom: 2em;
+    margin-left: 5%;
+    align-self: stretch;
+    flex-grow: 2;
   }
 
 #checkboxes {
@@ -249,6 +256,91 @@
 
 #checkboxes span {
   font-family: 'BenchNine', sans-serif;
+  color: #5C4033;
   font-size: 1.4em;
+  max-width: 2em;
   flex-wrap: wrap;
+}
+
+.footer {
+  width:100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-item {
+  border: 1px solid #fff;
+  margin-top: 2em;
+  height: 9em;
+  flex: 1;
+}
+.footer-one {
+  flex: initial;
+  width: 6em;
+}
+.footer-one img {
+  width: 4.5em;
+  height: 4.5em;
+
+}
+.footer-two p {
+  font-family: 'Scope One', serif;
+  color: #545454;
+  text-align: left;
+  text-indent: 0em;
+  line-height: 1.3em;
+  padding-top: 0em;
+  font-size: 1.25em;
+  padding-right: 1.5em;
+}
+.footer-two h1 {
+  font-family: 'Scope One', serif;
+  margin-bottom: .5em;
+  font-size: 1.35em;
+  font-weight: 600;
+}
+.footer-three {
+  flex: initial;
+  width: 15em;
+}
+.footer-three img {
+  padding-top: .5em;
+  height: 3.7em;
+  float: right;
+}
+
+#hrule2 {
+    background: url('../img/small-logo.png') no-repeat top center;
+    background-size: contain;
+    display: block;
+    height: 1.5em;
+    border: 0;
+    position: relative;
+}
+#hrule2:before,
+#hrule2:after {
+    content: '';
+    display: block;
+    position: absolute;
+    background: #d7d7d7;
+    height: 2px;
+    top: 8px;
+}
+#hrule2:before {
+    left: 0;
+    right: 50%;
+    margin-right: 15px;
+}
+#hrule2:after {
+    right: 0;
+    left: 50%;
+    margin-left: 15px;
+}
+
+#footer-bottom  {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2em;
+  margin-bottom:3em;
 }
